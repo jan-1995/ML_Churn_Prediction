@@ -70,7 +70,7 @@ A manager at the bank is disturbed with more and more customers leaving their cr
 
 This document explains the usage and purpose of two Python files, "logger.py" and "exception.py," that play a crucial role in logging and exception handling within a Python project.
 
-## logger.py
+### logger.py
 
 "logger.py" is a Python module responsible for setting up logging functionality within the project. It performs the following tasks:
 
@@ -90,7 +90,7 @@ This document explains the usage and purpose of two Python files, "logger.py" an
 4. Example usage:
    - The module demonstrates its functionality by logging an "Logging has started" message when executed.
 
-## exception.py
+### exception.py
 
 "exception.py" is a Python module for custom exception handling. It provides tools for capturing and handling exceptions, including creating informative error messages. Key features are as follows:
 
@@ -111,6 +111,40 @@ This document explains the usage and purpose of two Python files, "logger.py" an
    - The module demonstrates its functionality by raising a custom exception when division by zero occurs. The exception message is then logged.
   
 ## Running The Files:
+
+This Python script is the main entry point for running a Churn Prediction project. It leverages various functions and modules from a custom library, "churn_library," to perform tasks related to data processing, model training, and evaluation.
+
+Here's what the script does:
+
+### Import Necessary Libraries:
+The script begins by importing essential libraries required for data processing, machine learning, and visualization. These include popular libraries like Pandas for data handling, Seaborn for data visualization, and scikit-learn for machine learning tasks.
+
+### Initialize Logging and Exception Handling:
+It utilizes a custom logging and exception handling system that logs important messages and handles exceptions gracefully. This is done through the "logger.py" and "exception.py" modules.
+
+### Data Import: The script reads a dataset from a specified file path using the "import_data" function. The user should replace the file path with their own data source.
+
+### Data Preprocessing:
+The dataset is preprocessed by identifying categorical and numerical columns, encoding categorical features, and conducting exploratory data analysis (EDA). EDA visualizations are saved in a user-specified directory. Users can customize the output directory to their preferred location.
+
+### Feature Engineering:
+Feature engineering is performed to prepare the data for model training. It selects specific columns and splits the dataset into training and testing sets. Users can modify the selected columns based on their project requirements.
+
+### Model Training:
+The script trains machine learning models, specifically a Random Forest Classifier and a Logistic Regression model. It utilizes GridSearchCV for hyperparameter tuning to find the best model configuration. Model training results and metrics are saved in a user-specified directory.
+
+### Feature Importance Plot:
+The importance of features used in the machine learning models is visualized and saved as an image. Users can specify the output directory for this image.
+
+### Classification Report:
+A classification report is generated for model evaluation. This report includes key metrics such as precision, recall, and F1-score for both the training and testing data. The report is saved as an image in a user-defined directory.
+
+To use this script for your own project, you should make the following customizations:
+
+Set the <mark>response</mark> variable to the target variable you want to predict (e.g., "Churn").
+Update the <mark>data file path</mark> in the "import_data" function to point to your dataset.
+Adjust the output directories to your preferred location, ensuring that they exist in your file system.
+After these customizations, you can run the script to perform churn prediction tasks on your dataset. It's a versatile tool that can be adapted to various churn prediction projects by changing the dataset, target variable, and output paths.
 
 
 
