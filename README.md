@@ -114,9 +114,9 @@ This document explains the usage and purpose of two Python files, "logger.py" an
 
 This Python script is the main entry point for running a Churn Prediction project. It leverages various functions and modules from a custom library, "churn_library," to perform tasks related to data processing, model training, and evaluation.
 
-python main.py
+   python main.py
 
-Here's what the script does:
+Here's what this script does:
 
 ### Import Necessary Libraries:
 The script begins by importing essential libraries required for data processing, machine learning, and visualization. These include popular libraries like Pandas for data handling, Seaborn for data visualization, and scikit-learn for machine learning tasks.
