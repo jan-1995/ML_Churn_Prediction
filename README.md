@@ -3,20 +3,17 @@
 This Python project focuses on predicting customer churn rate using machine learning. The code in this repository includes data preprocessing, exploratory data analysis (EDA), feature engineering, model training, and evaluation.
 
 ## Table of Contents
-
-- [Introduction](#introduction)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Dependencies](#dependencies)
-- [Usage](#usage)
-- [Data](#data)
-- [Logging](#logging)
-  - [logger.py](#loggerpy)
-  - [exception.py](#exceptionpy)
-- [Running The Files](#running-the-files)
-
-- [Contact Information](#contact-information)
-
+1. [Introduction](#introduction)
+2. [Project Structure](#project-structure)
+3. [Getting Started](#getting-started)
+4. [Dependencies](#dependencies)
+5. [Usage](#usage)
+6. [Data](#data)
+7. [Logging](#logging)
+   7.1. [logger.py](#loggerpy)
+   7.2. [exception.py](#exceptionpy)
+8. [Running The Files](#running-the-files)
+9. [Contact Information](#contact-information)
 
 ## Introduction
 
@@ -118,8 +115,9 @@ This document explains the usage and purpose of two Python files, "logger.py" an
 
 This Python script is the main entry point for running a Churn Prediction project. It leverages various functions and modules from a custom library, "churn_library," to perform tasks related to data processing, model training, and evaluation.
 
-   python main.py
-
+```shell
+python main.py
+```
 Here's what this script does:
 
 ### Import Necessary Libraries:
