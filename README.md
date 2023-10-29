@@ -116,15 +116,6 @@ This document explains the usage and purpose of two Python files, "logger.py" an
 4. Example usage:
    - The module demonstrates its functionality by raising a custom exception when division by zero occurs. The exception message is then logged.
 
-## Running the Modules
-
-When these modules are run, they showcase their functionalities through the following actions:
-
-1. **logger.py**: Upon execution, it starts logging and creates a log file with the current timestamp. It logs the message "Logging has started."
-
-2. **exception.py**: When run, it initializes variables `a` and `b`, attempts to divide `a` by `b` (division by zero), and raises a custom exception. The exception message includes details on the script name and the line where the exception occurred. The error message is logged using the "logger.py" configuration.
-
-These modules are essential for proper logging and exception handling within a Python project, helping developers identify and address issues effectively.
 
 
 
