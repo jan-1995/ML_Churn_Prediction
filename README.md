@@ -152,6 +152,15 @@ Adjust the output directories to your preferred location, ensuring that they exi
 After these customizations, you can run the script to perform churn prediction tasks on your dataset. It's a versatile tool that can be adapted to various churn prediction projects by changing the dataset, target variable, and output paths.
 
 
+## Contact Information 📬
+
+If you're interested in collaboration, have specific queries, or would like to get in touch, feel free to reach out via email:
+
+**Email:** janhaider040@gmail.com 📧
+
+We look forward to hearing from you and working together to further improve this project or address any questions you may have! 🤝
+
+
 
 
 
