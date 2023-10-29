@@ -66,7 +66,7 @@ A manager at the bank is disturbed with more and more customers leaving their cr
 
 3. The dataset should include information about customers and whether they churned or not.
 
-## Logging and Exception Handling (explaining logger.py and exception.py):
+## Logging and Exception Handling:
 
 This document explains the usage and purpose of two Python files, "logger.py" and "exception.py," that play a crucial role in logging and exception handling within a Python project.
 
@@ -122,7 +122,8 @@ The script begins by importing essential libraries required for data processing,
 ### Initialize Logging and Exception Handling:
 It utilizes a custom logging and exception handling system that logs important messages and handles exceptions gracefully. This is done through the "logger.py" and "exception.py" modules.
 
-### Data Import: The script reads a dataset from a specified file path using the "import_data" function. The user should replace the file path with their own data source.
+### Data Import:
+The script reads a dataset from a specified file path using the "import_data" function. The user should replace the file path with their own data source.
 
 ### Data Preprocessing:
 The dataset is preprocessed by identifying categorical and numerical columns, encoding categorical features, and conducting exploratory data analysis (EDA). EDA visualizations are saved in a user-specified directory. Users can customize the output directory to their preferred location.
@@ -139,9 +140,9 @@ The importance of features used in the machine learning models is visualized and
 ### Classification Report:
 A classification report is generated for model evaluation. This report includes key metrics such as precision, recall, and F1-score for both the training and testing data. The report is saved as an image in a user-defined directory.
 
-To use this script for your own project, you should make the following customizations:
+- To use this script for your own project, you should make the following customizations:
 
-Set the <mark>response</mark> variable to the target variable you want to predict (e.g., "Churn").
+- Set the <mark>response</mark> variable to the target variable you want to predict (e.g., "Churn").
 Update the <mark>data file path</mark> in the "import_data" function to point to your dataset.
 Adjust the output directories to your preferred location, ensuring that they exist in your file system.
 After these customizations, you can run the script to perform churn prediction tasks on your dataset. It's a versatile tool that can be adapted to various churn prediction projects by changing the dataset, target variable, and output paths.
