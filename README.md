@@ -72,15 +72,11 @@ A manager at the bank is disturbed with more and more customers leaving their cr
 
 3. The dataset should include information about customers and whether they churned or not.
 
-# Logging and Exception Handling:
-
-# Logger and Exception Handling in Python
-
-## Introduction
+## Logging and Exception Handling (explaining logger.py and exception.py):
 
 This document explains the usage and purpose of two Python files, "logger.py" and "exception.py," that play a crucial role in logging and exception handling within a Python project.
 
-## logger.py
+# logger.py
 
 "logger.py" is a Python module responsible for setting up logging functionality within the project. It performs the following tasks:
 
@@ -100,7 +96,7 @@ This document explains the usage and purpose of two Python files, "logger.py" an
 4. Example usage:
    - The module demonstrates its functionality by logging an "Logging has started" message when executed.
 
-## exception.py
+# exception.py
 
 "exception.py" is a Python module for custom exception handling. It provides tools for capturing and handling exceptions, including creating informative error messages. Key features are as follows:
 
@@ -120,7 +116,7 @@ This document explains the usage and purpose of two Python files, "logger.py" an
 4. Example usage:
    - The module demonstrates its functionality by raising a custom exception when division by zero occurs. The exception message is then logged.
 
-## Running the Modules
+# Running the Modules
 
 When these modules are run, they showcase their functionalities through the following actions:
 
