@@ -54,7 +54,7 @@ To get started with this project, follow these steps:
 
 To run the code and predict customer churn, you can execute the main script as follows:
 
-    ```shell
+    ``shell
     python main.py
 
 
