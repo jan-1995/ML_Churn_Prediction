@@ -55,11 +55,10 @@ To get started with this project, follow these steps:
 To run the code and predict customer churn, you can execute the main script as follows:
 
  ```shell
-python main.py
+ python main.py
 
 
 ## Data
-
 The dataset should include information about customers and whether they churned or not.
 It's important to ensure that the dataset is properly formatted and labeled for the code to work correctly.
    
