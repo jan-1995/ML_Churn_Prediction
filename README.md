@@ -158,7 +158,7 @@ If you're interested in collaboration, have specific queries, or would like to g
 
 **Email:** janhaider040@gmail.com 📧
 
-We look forward to hearing from you and working together to further improve this project or address any questions you may have! 🤝
+I look forward to hearing from you and working together to further improve this project or address any questions you may have! 🤝
 
 
 
