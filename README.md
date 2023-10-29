@@ -7,18 +7,12 @@ This Python project focuses on predicting customer churn rate using machine lear
 - [Introduction](#introduction)
 - [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
-- [Ddependencies](#Dependencies)
+- [Dependencies](#Dependencies)
 - [Usage](#Usage)
 - [Data](#Data)
-- [Data Preprocessing](#data-preprocessing)
-- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
-- [Feature Engineering](#feature-engineering)
-- [Model Training](#model-training)
-- [Model Evaluation](#model-evaluation)
-- [Results](#results)
-- [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
+- [Logging and Exception Handling](#Logging and Exception Handling)
+- [Running The Files)](#Running The Files)
+
 
 ## Introduction
 
@@ -115,6 +109,10 @@ This document explains the usage and purpose of two Python files, "logger.py" an
 
 4. Example usage:
    - The module demonstrates its functionality by raising a custom exception when division by zero occurs. The exception message is then logged.
+  
+## Running The Files:
+
+
 
 
 
