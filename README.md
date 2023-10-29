@@ -43,4 +43,24 @@ To get started with this project, follow these steps:
 1. Clone the repository to your local machine:
 
    ```shell
-   git clone https://github.com/your-username/customer-churn-prediction.git
+   git clone https://github.com/jan-1995/customer-churn-prediction.git
+
+2. Navigate to the project directory
+   
+    ```shell
+   cd customer-churn-prediction
+
+## Usage
+
+To run the code and predict customer churn, you can execute the main script as follows:
+
+    ```shell
+   python main.py
+
+
+## Data
+
+The dataset should include information about customers and whether they churned or not.
+It's important to ensure that the dataset is properly formatted and labeled for the code to work correctly.
+   
+
