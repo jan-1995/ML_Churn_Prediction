@@ -7,11 +7,11 @@ This Python project focuses on predicting customer churn rate using machine lear
 - [Introduction](#introduction)
 - [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
-- [Dependencies](#Dependencies)
-- [Usage](#Usage)
-- [Data](#Data)
-- [Logging and Exception Handling](#Logging and Exception Handling)
-- [Running The Files)](#Running The Files)
+- [Dependencies](#dependencies)
+- [Usage](#usage)
+- [Data](#data)
+- [Logging and Exception Handling](#logging and exception handling)
+- [Running The Files)](#running the files)
 
 
 ## Introduction
@@ -66,7 +66,7 @@ A manager at the bank is disturbed with more and more customers leaving their cr
 
 3. The dataset should include information about customers and whether they churned or not.
 
-## Logging and Exception Handling:
+## Logging and Exception Handling
 
 This document explains the usage and purpose of two Python files, "logger.py" and "exception.py," that play a crucial role in logging and exception handling within a Python project.
 
@@ -110,7 +110,7 @@ This document explains the usage and purpose of two Python files, "logger.py" an
 4. Example usage:
    - The module demonstrates its functionality by raising a custom exception when division by zero occurs. The exception message is then logged.
   
-## Running The Files:
+## Running The Files
 
 This Python script is the main entry point for running a Churn Prediction project. It leverages various functions and modules from a custom library, "churn_library," to perform tasks related to data processing, model training, and evaluation.
 
