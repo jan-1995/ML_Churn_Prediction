@@ -15,6 +15,8 @@ This Python project focuses on predicting customer churn rate using machine lear
   - [exception.py](#exceptionpy)
 - [Running The Files](#running-the-files)
 
+- [Contact Information](#contact-information)
+
 
 ## Introduction
 
