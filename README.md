@@ -10,8 +10,10 @@ This Python project focuses on predicting customer churn rate using machine lear
 - [Dependencies](#dependencies)
 - [Usage](#usage)
 - [Data](#data)
-- [Logging and Exception Handling](#logging and exception handling)
-- [Running The Files)](#running the files)
+- [Logging](#logging)
+  - [logger.py](#loggerpy)
+  - [exception.py](#exceptionpy)
+- [Running The Files](#running-the-files)
 
 
 ## Introduction
@@ -66,7 +68,7 @@ A manager at the bank is disturbed with more and more customers leaving their cr
 
 3. The dataset should include information about customers and whether they churned or not.
 
-## Logging and Exception Handling
+## Logging
 
 This document explains the usage and purpose of two Python files, "logger.py" and "exception.py," that play a crucial role in logging and exception handling within a Python project.
 
