@@ -1,0 +1,7 @@
+README.md
+setup.py
+udacity_assignment.egg-info/PKG-INFO
+udacity_assignment.egg-info/SOURCES.txt
+udacity_assignment.egg-info/dependency_links.txt
+udacity_assignment.egg-info/requires.txt
+udacity_assignment.egg-info/top_level.txt

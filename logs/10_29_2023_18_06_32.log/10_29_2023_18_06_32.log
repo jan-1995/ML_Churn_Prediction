@@ -1,0 +1,13 @@
+[2023-10-29 18:06:32,389] 37 root - INFO - Reading Data From Provided Source
+[2023-10-29 18:06:32,394] 39 root - INFO - Data Read from Source
+[2023-10-29 18:06:32,394] 94 root - INFO - Getting all the categorical data 
+[2023-10-29 18:06:32,394] 116 root - INFO - Encoding all the Categorical Columns and changing their names to _Churn 
+[2023-10-29 18:06:32,426] 122 root - INFO - encoder helper has completed task successfully
+[2023-10-29 18:06:32,426] 59 root - INFO - Perform EDA has started
+[2023-10-29 18:06:33,879] 79 root - INFO - EDA has been performed and all data has been saved in the folder  C:/Users/haide/Desktop/Predicting Customer Churn with Clean Code/images/EDA 
+[2023-10-29 18:06:33,879] 145 root - INFO - Performing feature engineering and data splits to produce for model training
+[2023-10-29 18:06:33,879] 150 root - INFO - Got the data splits and feature engineering has been completed
+[2023-10-29 18:06:33,879] 273 root - INFO - Training, storing model results and models
+[2023-10-29 18:10:12,852] 231 root - INFO - Saving all the feature Importances plots in the desired output path: C:/Users/haide/Desktop/Predicting Customer Churn with Clean Code/images/results
+[2023-10-29 18:10:13,158] 189 root - INFO - Getting all the plots and classification reports related to model training
+[2023-10-29 18:10:13,609] 213 root - INFO - All reports related to model training are received and saved in the folder: C:/Users/haide/Desktop/Predicting Customer Churn with Clean Code/images/
