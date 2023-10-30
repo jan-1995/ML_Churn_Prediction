@@ -24,14 +24,3 @@ class CustomException(Exception):
     def __str__(self):
         return self.error_message
 
-
-if __name__ == "__main__":
-    try:
-        logging.info("a and b getting initialized")
-        a = 4
-
-        b = 0
-        c = a / b
-
-    except Exception as e:
-        raise CustomException(e, sys)

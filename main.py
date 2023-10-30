@@ -25,12 +25,12 @@ if __name__ == "__main__":
     """Perform all the function testings here"""
 
     response = "Churn"
-    df = import_data("C:/Users/haide/Desktop/Predicting Customer Churn with Clean Code/data/bank_data.csv")
+    df = import_data("C:/Users/haide/Desktop/ML_Churn_Prediction/data/bank_data.csv")
     cat_cols, num_cols = get_categorical_and_numerical_columns(df)
     df = encoder_helper(df, cat_cols, response)
     perform_eda(
         df,
-        output_dir="C:/Users/haide/Desktop/Predicting Customer Churn with Clean Code/images/EDA",
+        output_dir="C:/Users/haide/Desktop/ML_Churn_Prediction/images/EDA",
     )
     X_train, X_test, y_train, y_test, X_data = perform_feature_engineering(df, response)
     (
@@ -43,7 +43,7 @@ if __name__ == "__main__":
     feature_importance_plot(
         model,
         X_data,
-        "C:/Users/haide/Desktop/Predicting Customer Churn with Clean Code/images/results",
+        "C:/Users/haide/Desktop/ML_Churn_Prediction/images/results",
     )
     classification_report_image(
         y_train,
@@ -52,5 +52,5 @@ if __name__ == "__main__":
         y_train_preds_rf,
         y_test_preds_lr,
         y_test_preds_rf,
-        output_dir="C:/Users/haide/Desktop/Predicting Customer Churn with Clean Code/images/",
+        output_dir="C:/Users/haide/Desktop/ML_Churn_Prediction/images/",
     )

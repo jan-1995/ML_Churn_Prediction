@@ -270,7 +270,7 @@ def train_models(X_train, X_test, y_train, y_test):
     """
     try:
         logging.info("Training, storing model results and models")
-        output_dir = "C:/Users/haide/Desktop/Predicting Customer Churn with Clean Code/images/results"
+        output_dir = "C:/Users/haide/Desktop/ML_Churn_Prediction/images/results"
         # Grid search
         rfc = RandomForestClassifier(random_state=42)
         lrc = LogisticRegression(solver="lbfgs", max_iter=3000)
@@ -294,7 +294,7 @@ def train_models(X_train, X_test, y_train, y_test):
         y_test_preds_lr = lrc.predict(X_test)
 
         # Store the
-        directory = "C:/Users/haide/Desktop/Predicting Customer Churn with Clean Code/images/results/"
+        directory = "C:/Users/haide/Desktop/ML_Churn_Prediction/images/results/"
         file_name = "model_scores.txt"
         os.makedirs(directory, exist_ok=True)
         file_path = os.path.join(directory, file_name)
@@ -330,8 +330,8 @@ def train_models(X_train, X_test, y_train, y_test):
         plt.savefig(os.path.join(output_dir, "rfc_roc_curve.png"))
 
         # Save RFC and LRC best models
-        joblib.dump(cv_rfc.best_estimator_, "C:/Users/haide/Desktop/Predicting Customer Churn with Clean Code/models/rfc_model.pkl")
-        joblib.dump(lrc, "C:/Users/haide/Desktop/Predicting Customer Churn with Clean Code/models/logistic_model.pkl")
+        joblib.dump(cv_rfc.best_estimator_, "C:/Users/haide/Desktop/ML_Churn_Prediction/models/rfc_model.pkl")
+        joblib.dump(lrc, "C:/Users/haide/Desktop/ML_Churn_Prediction/models/logistic_model.pkl")
 
         explainer = shap.TreeExplainer(cv_rfc.best_estimator_)
         shap_values = explainer.shap_values(X_test)

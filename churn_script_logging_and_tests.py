@@ -8,7 +8,7 @@ import pandas as pd
 
 @pytest.fixture(scope="module")
 def data_path():
-    return "C:/Users/haide/Desktop/Predicting Customer Churn with Clean Code/data/bank_data.csv"
+    return "C:/Users/haide/Desktop/ML_Churn_Prediction/data/bank_data.csv"
 
 def test_import(data_path):
     """
