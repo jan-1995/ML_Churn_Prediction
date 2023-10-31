@@ -156,7 +156,7 @@ def Cols_to_Keep():
     ]
     return keep_cols
 
-def test_perform_feature_engineering(response):
+def test_perform_feature_engineering(response,Cols_to_Keep):
     """
     Test the perform_feature_engineering function.
     """
