@@ -1,9 +1,13 @@
+"""
+Setup file, used to create package of this entire folder
+
+Author: Haider Jan
+Creation Date: 30/10/2023
+"""
 from setuptools import find_packages, setup
 from typing import List
 
-
 HYPHEN_E_DOT = "-e ."
-
 
 def get_requirements(file_path: str) -> List[str]:
     """

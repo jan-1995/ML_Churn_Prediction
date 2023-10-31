@@ -1,0 +1,10 @@
+[2023-10-31 00:06:56,991] 36 root - INFO - Reading Data From Provided Source
+[2023-10-31 00:06:57,071] 38 root - INFO - Data Read from Source
+[2023-10-31 00:06:57,071] 93 root - INFO - Getting all the categorical data 
+[2023-10-31 00:06:57,092] 115 root - INFO - Encoding all the Categorical Columns and changing their names to _Churn 
+[2023-10-31 00:06:57,148] 121 root - INFO - encoder helper has completed task successfully
+[2023-10-31 00:06:57,148] 58 root - INFO - Perform EDA has started
+[2023-10-31 00:07:00,985] 78 root - INFO - EDA has been performed and all data has been saved in the folder  C:/Users/haide/Desktop/ML_Churn_Prediction/images/EDA 
+[2023-10-31 00:07:00,985] 144 root - INFO - Performing feature engineering and data splits to produce for model training
+[2023-10-31 00:07:00,997] 149 root - INFO - Got the data splits and feature engineering has been completed
+[2023-10-31 00:07:00,997] 275 root - INFO - Training, storing model results and models

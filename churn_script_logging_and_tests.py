@@ -1,3 +1,11 @@
+"""
+Function Testing file, running this file with pytest will 
+test all the necessary functions that are used in the churn_library.py
+
+Author: Haider Jan
+Creation Date: 30/10/2023
+"""
+import sys
 import os
 import pytest
 from churn_library import *
@@ -8,6 +16,9 @@ import pandas as pd
 
 @pytest.fixture(scope="module")
 def data_path():
+    """
+    Fixture which provides the data path to the test_import function
+    """
     return "C:/Users/haide/Desktop/ML_Churn_Prediction/data/bank_data.csv"
 
 def test_import(data_path):
@@ -70,11 +81,13 @@ def test_perform_eda(tmpdir,data):
 
 @pytest.fixture(scope="module")
 def response():
+    """ Returns response variable """
     return "Churn"
 
 @pytest.fixture(scope="module")
 def encode_feats():
-	d2encode = pd.DataFrame(
+    """ fixture feeds the label encoder all the necessary features"""
+    d2encode = pd.DataFrame(
         {
             "Customer_Age": [25, 30, 35, 40, 45],
             "Marital_Status": ["Single", "Married", "Single", "Married", "Single"],
@@ -87,57 +100,67 @@ def encode_feats():
             ],
         }
     )
-	return d2encode
+    return d2encode
      
 
 def test_encoder_helper(response,encode_feats):
-     
-	try:
-		logging.info("Starting to Encode Features")
-		cat_cols = ["Customer_Age", "Marital_Status", "Attrition_Flag"]
-		result = encoder_helper(encode_feats, cat_cols, response)
+    """ Encoder helpwe test 
+        Args: response fixture, encode_feats fixture
+    """
+        
+    try:
+        logging.info("Starting to Encode Features")
+        cat_cols = ["Customer_Age", "Marital_Status", "Attrition_Flag"]
+        result = encoder_helper(encode_feats, cat_cols, response)
 
-		assert f"Customer_Age_{response}" in result.columns
-		assert f"Marital_Status_{response}" in result.columns
-		assert f"Attrition_Flag_{response}" in result.columns
-		logging.info("Features encoded successfully using encoder helper")
-	
-	except Exception as e:
-          raise CustomException(e,sys)
+        assert f"Customer_Age_{response}" in result.columns
+        assert f"Marital_Status_{response}" in result.columns
+        assert f"Attrition_Flag_{response}" in result.columns
+        logging.info("Features encoded successfully using encoder helper")
+
+    except Exception as e:
+            raise CustomException(e,sys)
 
 @pytest.fixture(scope="module")
 def response():
+    """
+    Fixture that returns a response string.
+    """
     return "Churn"
 
 @pytest.fixture(scope="module")
 def Cols_to_Keep():
-	
-	keep_cols = [
-	"Customer_Age",
-	"Dependent_count",
-	"Months_on_book",
-	"Total_Relationship_Count",
-	"Months_Inactive_12_mon",
-	"Contacts_Count_12_mon",
-	"Credit_Limit",
-	"Total_Revolving_Bal",
-	"Avg_Open_To_Buy",
-	"Total_Amt_Chng_Q4_Q1",
-	"Total_Trans_Amt",
-	"Total_Trans_Ct",
-	"Total_Ct_Chng_Q4_Q1",
-	"Avg_Utilization_Ratio",
-	"Gender_Churn",
-	"Education_Level_Churn",
-	"Marital_Status_Churn",
-	"Income_Category_Churn",
-	"Card_Category_Churn",
-	"Churn",
-]
-	return keep_cols
+    """
+    Fixture that defines a list of columns to keep.
+    """
+    keep_cols = [
+        "Customer_Age",
+        "Dependent_count",
+        "Months_on_book",
+        "Total_Relationship_Count",
+        "Months_Inactive_12_mon",
+        "Contacts_Count_12_mon",
+        "Credit_Limit",
+        "Total_Revolving_Bal",
+        "Avg_Open_To_Buy",
+        "Total_Amt_Chng_Q4_Q1",
+        "Total_Trans_Amt",
+        "Total_Trans_Ct",
+        "Total_Ct_Chng_Q4_Q1",
+        "Avg_Utilization_Ratio",
+        "Gender_Churn",
+        "Education_Level_Churn",
+        "Marital_Status_Churn",
+        "Income_Category_Churn",
+        "Card_Category_Churn",
+        "Churn",
+    ]
+    return keep_cols
 
 def test_perform_feature_engineering(response):
-
+    """
+    Test the perform_feature_engineering function.
+    """
     # Create an example DataFrame with random data
     data = {
         col: [
@@ -157,9 +180,11 @@ def test_perform_feature_engineering(response):
     except Exception as e:
         raise CustomException(e, sys)
 
-
 @pytest.fixture(scope="module")
 def sample_data():
+    """
+    Fixture that defines sample data for testing.
+    """
     # Defining a random data sample to be used for testing
     X_train = np.array([[1, 2], [3, 4], [5, 6]])
     X_test = np.array([[7, 8], [9, 10]])
@@ -167,8 +192,10 @@ def sample_data():
     y_test = np.array([1, 1])
     return X_train, X_test, y_train, y_test
 
-
 def test_train_models(sample_data):
+    """
+    Test the train_models function with sample data.
+    """
     X_train, X_test, y_train, y_test = sample_data
 
     # Test the train_models function
@@ -186,3 +213,5 @@ def test_train_models(sample_data):
     assert len(y_train_preds_lr) == len(y_train)
     assert len(y_test_preds_lr) == len(y_test)
     
+if __name__=="__main__":
+     pytest.main()

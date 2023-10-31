@@ -154,6 +154,9 @@ def perform_feature_engineering(df, response):
 
 
 def keep_columns():
+    """
+    This function is used to feed all the columns of the dataframe which wwe want to train the model with
+    """
     try:
         keep_cols = [
             "Customer_Age", "Dependent_count", "Months_on_book",

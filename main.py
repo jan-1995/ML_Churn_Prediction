@@ -1,3 +1,10 @@
+"""
+File which runs the entire ML pipeline from EDA, data cleaning to model training and file saving
+
+Author: Haider Jan
+Created at: 30/10/2023
+
+"""
 from churn_library import *
 import os
 import sys
