@@ -39,8 +39,7 @@ def test_import(data_path):
 
 @pytest.fixture(scope="module")
 def data():
-     
-     
+        
 	df = pd.DataFrame(
 		{
 			"Churn": [0, 1, 0, 1, 0],

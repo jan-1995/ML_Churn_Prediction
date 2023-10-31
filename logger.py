@@ -1,5 +1,5 @@
+"""File used to initialize logging"""
 import logging
-
 # Any execution that occurs, error, run time, logging does that
 import os
 from datetime import datetime
